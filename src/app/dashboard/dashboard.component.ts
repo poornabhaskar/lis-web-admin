@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
     
   }
   getDashboardData(): Observable<any> {
-    const url = AppConstants.appServerURL+"/api/";
+    const url = AppConstants.appServerURL+"/api/v1/";
     return this.http.get(url).pipe(map((response:any) => response));
   }
 
